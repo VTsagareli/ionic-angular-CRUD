@@ -13,10 +13,15 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-  },  {
+  },
+  {
     path: 'view',
     loadChildren: () => import('./view/view.module').then( m => m.ViewPageModule)
+  },  {
+    path: 'manage',
+    loadChildren: () => import('./manage/manage.module').then( m => m.ManagePageModule)
   },
+
 
 
 

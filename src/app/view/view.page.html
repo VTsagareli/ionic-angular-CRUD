@@ -1,13 +1,46 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>view</ion-title>
+    <ion-title>View</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">view</ion-title>
+      <ion-title size="large">View</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>List Of Users Registered In The System</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="user-list">
+      <div class="user-row header">
+        <div>Name</div>
+        <div>Lastname</div>
+        <div>Sex</div>
+        <div>Age</div>
+        <div>Phone Number</div>
+        <div>Email</div>
+        <div>Address</div>
+      </div>
+      <div class="user-row">
+        <div>John</div>
+        <div>Doe</div>
+        <div>Male</div>
+        <div>30</div>
+        <div>123-456-7890</div>
+        <div>john@example.com</div>
+        <div>123 Main St</div>
+      </div>
+      <!-- Add more user rows here -->
+    </ion-card-content>
+
+  </ion-card>
+
+  <div class="goBackButton">
+    <ion-button (click)="navigateHome()">Go Back</ion-button>
+  </div>
+
 </ion-content>

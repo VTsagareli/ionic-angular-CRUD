@@ -14,14 +14,12 @@ export class HomePage {
 
   navigateView(){
     this.router.navigate(['view']);
+    console.log("navigating to view")
   }
 
   navigateManage(){
     this.router.navigate(['manage'])
   }
+
   
-  
-
-
-
 }
