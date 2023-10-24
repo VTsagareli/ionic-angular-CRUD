@@ -1,0 +1,60 @@
+ion-title {
+    text-align:center;
+  }
+
+/* Set the card's dimensions and position it in the center */
+ion-card {
+    width: 80%;
+    height: 68vh; /* 80% of the viewport height */
+    margin: 10vh auto; /* Center the card vertically */
+    background-color: #868484; /* Gray color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
+    border-radius: 10px; /* Rounded corners (optional) */
+    padding: 20px; /* Add some padding inside the card (optional) */
+    box-sizing: border-box; /* Include padding in the card's dimensions */
+  }
+
+ion-card-title{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.goBackButton{
+    display: flex;
+    justify-content: center;
+}
+
+ion-card {
+    background-color: #fff; /* White background for the card content */
+  }
+  
+  .user-list {
+    padding: 0; /* Remove padding from card content */
+  }
+  
+  .user-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .user-row.header {
+    font-weight: bold;
+  }
+  
+  .user-row:last-child {
+    border: none; /* Remove the bottom border from the last user row */
+  }
+  
+ion-col {
+  background-color: #135d54;
+  border: solid 1px #fff;
+  color: #fff;
+  text-align: center;
+} 
+  
+  
+  

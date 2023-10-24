@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-view',
@@ -7,9 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewPage implements OnInit {
 
-  constructor() { }
+  page = 0;
+  resultsCount = 10;
+  totalPage = 10;
 
-  ngOnInit() {
+  constructor(private router: Router, private http: HttpClient){ }
+
+  data = [];
+
+  ngOnInit(){}
+
+  navigateHome(){
+    this.router.navigate([''])
   }
+
+  // loadData(){
+  //   this.http.get(`https://randomuser.me/api/?pages=${this.page}&results=${this.resultsCount}`).subscribe(res => {
+  //     console.log('res__', res);
+  //     this.data = res["results"];
+  //   });
+  // }
+  
 
 }
