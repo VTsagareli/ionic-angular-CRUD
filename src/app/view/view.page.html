@@ -15,27 +15,16 @@
     <ion-card-header>
       <ion-card-title>List Of Users Registered In The System</ion-card-title>
     </ion-card-header>
-    <ion-card-content class="user-list">
-      <div class="user-row header">
-        <div>Name</div>
-        <div>Lastname</div>
-        <div>Sex</div>
-        <div>Age</div>
-        <div>Phone Number</div>
-        <div>Email</div>
-        <div>Address</div>
-      </div>
-      <div class="user-row">
-        <div>John</div>
-        <div>Doe</div>
-        <div>Male</div>
-        <div>30</div>
-        <div>123-456-7890</div>
-        <div>john@example.com</div>
-        <div>123 Main St</div>
-      </div>
-      <!-- Add more user rows here -->
-    </ion-card-content>
+   <ion-grid [fixed]="true">
+    <ion-row>
+      <ion-col>Name</ion-col>
+      <ion-col>LastName</ion-col>
+      <ion-col>Age</ion-col>
+      <ion-col>Location</ion-col>
+      <ion-col>Email</ion-col>
+      <ion-col>Phone</ion-col>
+    </ion-row>
+   </ion-grid>
 
   </ion-card>
 

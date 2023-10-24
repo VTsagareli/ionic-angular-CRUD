@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -8,7 +9,13 @@ import { Router } from '@angular/router';
 })
 export class ViewPage implements OnInit {
 
-  constructor(private router: Router){ }
+  page = 0;
+  resultsCount = 10;
+  totalPage = 10;
+
+  constructor(private router: Router, private http: HttpClient){ }
+
+  data = [];
 
   ngOnInit(){}
 
@@ -16,6 +23,12 @@ export class ViewPage implements OnInit {
     this.router.navigate([''])
   }
 
+  // loadData(){
+  //   this.http.get(`https://randomuser.me/api/?pages=${this.page}&results=${this.resultsCount}`).subscribe(res => {
+  //     console.log('res__', res);
+  //     this.data = res["results"];
+  //   });
+  // }
   
 
 }

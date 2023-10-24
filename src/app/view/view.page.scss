@@ -17,6 +17,8 @@ ion-card {
 ion-card-title{
     color: black;
     font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 .goBackButton{
@@ -47,7 +49,12 @@ ion-card {
     border: none; /* Remove the bottom border from the last user row */
   }
   
- 
+ion-col {
+  background-color: #135d54;
+  border: solid 1px #fff;
+  color: #fff;
+  text-align: center;
+} 
   
   
   
